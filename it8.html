@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>10-Day Itinerary - BestExplorerTours</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Custom CSS for Accordion -->
+    <style>
+        .accordion-day {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-day:hover {
+            background-color: #f1f1f1;
+        }
+        .accordion-day h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .accordion-content img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .accordion-content p {
+            color: #555;
+        }
+        .accordion-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .accordion-content ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .accordion-content ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .included-excluded {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .included-excluded h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .included-excluded ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .included-excluded ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .included-excluded ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .activity-item, .accommodation-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .activity-item img, .accommodation-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .activity-item p, .accommodation-item p {
+            margin: 0;
+            color: #555;
+        }
+        .overview-section {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .overview-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .overview-section p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .overview-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .overview-section ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .overview-section ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Topbar and Navbar (Keep the same as your original code) -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">10-Day Itinerary</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Itinerary Details</li>
+            </ol>    
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Itinerary Details Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Explore the Journey</h5>
+                <h1 class="mb-0">10-Day Travel Itinerary</h1>
+                <p class="mt-3">Discover the best destinations, activities, and experiences with BestExplorerTours. Here’s a detailed day-by-day plan for your adventure.</p>
+            </div>
+
+            <!-- Overview Section -->
+            <div class="overview-section">
+                <h2>Overview</h2>
+                <p>Embark on a 10-day journey across the United States, exploring iconic cities, natural wonders, and cultural landmarks. This itinerary is designed to provide you with unforgettable experiences, luxurious accommodations, and seamless travel arrangements.</p>
+                <ul>
+                    <li><i class="fas fa-check text-primary me-2"></i><strong>Duration:</strong> 10 Days</li>
+                    <li><i class="fas fa-check text-primary me-2"></i><strong>Destinations:</strong> New York City, Washington D.C., Philadelphia, Niagara Falls, Chicago, Grand Canyon, Las Vegas, San Francisco, Los Angeles</li>
+                    <li><i class="fas fa-check text-primary me-2"></i><strong>Highlights:</strong> Statue of Liberty, Broadway Shows, White House, Niagara Falls, Grand Canyon, Las Vegas Strip, Golden Gate Bridge, Hollywood</li>
+                    <li><i class="fas fa-check text-primary me-2"></i><strong>Accommodation:</strong> 5-star hotels and boutique lodges</li>
+                    <li><i class="fas fa-check text-primary me-2"></i><strong>Transportation:</strong> Private transfers and domestic flights</li>
+                </ul>
+            </div>
+
+            <!-- Day 1 -->
+            <div class="accordion-day" onclick="toggleAccordion('day1')">
+                <h2>Day 1: Arrival in New York City</h2>
+            </div>
+            <div id="day1" class="accordion-content">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="destination-img">
+                            <img class="img-fluid rounded w-100" src="img/destination-9.jpg" alt="Day 1">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="mb-4">Welcome to the Big Apple! Start your journey with a visit to iconic landmarks like Times Square, Central Park, and the Statue of Liberty. Enjoy a delicious dinner at a rooftop restaurant with stunning city views.</p>
+                        <h4>Activities</h4>
+                        <div class="activity-item">
+                            <img src="img/destination-2.jpg" alt="Times Square">
+                            <p>Visit Times Square and experience the vibrant heart of NYC.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-2.jpg" alt="Central Park">
+                            <p>Explore Central Park and enjoy a peaceful stroll.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-3.jpg" alt="Statue of Liberty">
+                            <p>Take a ferry to the Statue of Liberty and Ellis Island.</p>
+                        </div>
+                        <h4>Accommodation</h4>
+                        <div class="accommodation-item">
+                            <img src="img/destination-4.jpg" alt="Hotel NYC">
+                            <p>Stay at The Ritz-Carlton New York, Central Park – a luxurious 5-star hotel.</p>
+                        </div>
+                        <div class="included-excluded">
+                            <h3>What's Included</h3>
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i>Airport Transfers</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Welcome Dinner</li>
+                            </ul>
+                            <h3>What's Excluded</h3>
+                            <ul>
+                                <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                                <li><i class="fas fa-times text-danger me-2"></i>Optional Activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="accordion-day" onclick="toggleAccordion('day2')">
+                <h2>Day 2: Broadway and Museums</h2>
+            </div>
+            <div id="day2" class="accordion-content">
+                <div class="row g-4">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="destination-img">
+                            <img class="img-fluid rounded w-100" src="img/destination-1.jpg" alt="Day 2">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <p class="mb-4">Immerse yourself in culture with a visit to the Metropolitan Museum of Art. In the evening, enjoy a world-class Broadway show. End the day with a stroll through the vibrant streets of Manhattan.</p>
+                        <h4>Activities</h4>
+                        <div class="activity-item">
+                            <img src="img/destination-8.jpg" alt="Metropolitan Museum">
+                            <p>Explore the Metropolitan Museum of Art and its vast collections.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/broadway.jpg" alt="Broadway Show">
+                            <p>Watch a Broadway show like "The Lion King" or "Hamilton".</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-7.jpg" alt="Manhattan Night Walk">
+                            <p>Take a night walk through Manhattan and enjoy the city lights.</p>
+                        </div>
+                        <h4>Accommodation</h4>
+                        <div class="accommodation-item">
+                            <img src="img/destination-5.jpg" alt="Hotel NYC">
+                            <p>Stay at The Ritz-Carlton New York, Central Park – a luxurious 5-star hotel.</p>
+                        </div>
+                        <div class="included-excluded">
+                            <h3>What's Included</h3>
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i>Entrance Fees to Museums</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Broadway Show Tickets</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                            </ul>
+                            <h3>What's Excluded</h3>
+                            <ul>
+                                <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                                <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Days 3-10 similarly -->
+
+            <!-- Call to Action -->
+            <div class="text-center mt-5">
+                <h2 class="mb-4">Ready to Explore?</h2>
+                <p class="mb-4">Book your 10-day adventure now and create unforgettable memories with BestExplorerTours.</p>
+                <a href="booking.html" class="btn btn-primary rounded-pill py-3 px-5">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Itinerary Details End -->
+
+    <!-- JavaScript for Accordion -->
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                // Close all other accordions
+                document.querySelectorAll('.accordion-content').forEach((item) => {
+                    item.style.display = "none";
+                });
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+    <!-- Subscribe, Footer, and Copyright (Keep the same as your original code) -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
