@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>10-Day Itinerary - BestExplorerTours</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+  
+        </head>
+    
+        <body>
+    
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+    
+            <!-- Topbar Start -->
+            <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+                <div class="row gx-0">
+                    <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                        <div class="d-inline-flex align-items-center" style="height: 45px;">
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Topbar End -->
+    
+           <!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <!-- Brand Logo -->
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>bestexplorertours</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <!-- Home Link -->
+                <a href="index.html" class="nav-item nav-link">Home</a>
+
+                <!-- About Link -->
+                <a href="about.html" class="nav-item nav-link">About</a>
+
+                <!-- Destinations Dropdown -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="europejewel.html">Europe Jewel</a></li>
+                        <li><a class="dropdown-item" href="classiceurope.html">Classic Europe</a></li>
+                        <li><a class="dropdown-item" href="europetaster.html">Europe Taster</a></li>
+                        <li><a class="dropdown-item" href="america.html">Africa</a></li>
+                        <li><a class="dropdown-item" href="ite.html">ite</a></li>
+                       
+                    </ul>
+                </div>
+
+                <!-- Blog Link -->
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+
+                <!-- Pages Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="destination.html" class="dropdown-item">Destination</a>
+                        <a href="tour.html" class="dropdown-item">Explore Tour</a>
+                        <a href="booking.html" class="dropdown-item">Travel Booking</a>
+                        <a href="gallery.html" class="dropdown-item">Our Gallery</a>
+                    </div>
+                </div>
+
+                <!-- Contact Link -->
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+            </div>
+
+            <!-- Book Now Button -->
+            <a href="booking.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+        </div>
+    </nav>
+</div>
+<!-- Navbar & Hero End -->
+
+    <!-- Custom CSS for Accordion -->
+    <style>
+        .accordion-day {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-day:hover {
+            background-color: #f1f1f1;
+        }
+        .accordion-day h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .accordion-content img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .accordion-content p {
+            color: #555;
+        }
+        .accordion-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .accordion-content ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .accordion-content ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .included-excluded {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .included-excluded h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .included-excluded ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .included-excluded ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .included-excluded ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .activity-item, .accommodation-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .activity-item img, .accommodation-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .activity-item p, .accommodation-item p {
+            margin: 0;
+            color: #555;
+        }
+        .overview-section {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .overview-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .overview-section p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .overview-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .overview-section ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .overview-section ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .main-image-section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .main-image {
+            flex: 2;
+        }
+        .main-image img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .small-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .small-images img {
+            width: 100%;
+            border-radius: 10px;
+            display: none; /* Hide all small images by default */
+        }
+        .small-images img.active {
+            display: block; /* Show only the active small image */
+        }
+        .navigation-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .navigation-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navigation-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .tour-name {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .tour-name h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        .accordion-day {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-day:hover {
+            background-color: #f1f1f1;
+        }
+        .accordion-day h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .accordion-content img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .accordion-content p {
+            color: #555;
+        }
+        .included-excluded {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .included-excluded h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .included-excluded ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .included-excluded ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .included-excluded ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Topbar and Navbar (Keep the same as your original code) -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">18-Day Itinerary</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Itinerary Details</li>
+            </ol>    
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Itinerary Details Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Explore the Journey</h5>
+                <h1 class="mb-0">18-Day Travel Itinerary</h1>
+                <p class="mt-3">Discover the best destinations, activities, and experiences with BestExplorerTours. Here’s a detailed day-by-day plan for your adventure.</p>
+            </div>
+
+             <!-- Main Image Section -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="main-image-section">
+                <!-- Main Image -->
+                <div class="main-image">
+                    <img src="img/ue.jpg" alt="Main Tour Image" id="mainImage">
+                </div>
+                <!-- Small Images -->
+                <div class="small-images">
+                    <img src="img/destination-2.jpg" alt="Small Image 1" class="active">
+                    <img src="img/destination-3.jpg" alt="Small Image 2">
+                    <img src="img/destination-4.jpg" alt="Small Image 3">
+                    <img src="img/destination-5.jpg" alt="Small Image 4" class="active">
+                    <img src="img/destination-6.jpg" alt="Small Image 5">
+                    <img src="img/destination-7.jpg" alt="Small Image 6">
+                    <!-- View All Pictures Link -->
+                    <div class="view-all-pictures">
+                        View All Pictures
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <div class="navigation-buttons">
+                        <button id="prevButton">Previous</button>
+                        <button id="nextButton">Next</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tour Name -->
+            <div class="tour-name">
+                <h1>18-Day Tour, start and end in Amsterdam</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+          <!-- Overview Section -->
+          <div class="overview-section">
+            <h2>Overview</h2>
+
+            <ul>
+                <li><i class="fas fa-check text-primary me-2"></i><strong>Duration:</strong> 18 Days</li>
+                <li><i class="fas fa-check text-primary me-2"></i>Enjoy free days in Barcelona, Rome, Venice, Paris, the Swiss Alps and Amsterdam</li>
+                <li><i class="fas fa-check text-primary me-2"></i>Visit Ghent in Belgium, Siena in Tuscany, Sète in the south of France, Andorra and more</li>
+                <li><i class="fas fa-check text-primary me-2"></i>Sail the Rhine River in Germany and cruise the canals of Amsterdam</li>
+                <li><i class="fas fa-check text-primary me-2"></i>Explore dazzling towns on a scenic drive along the French Riviera</li>
+            </ul>
+        </div>
+
+
+    <!-- Itinerary Details Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <!-- <h5 class="section-title px-3">Your Adventure Awaits</h5> -->
+            <h1 class="mb-0"> See Detailed Itinerary </h1>
+            <!-- <p class="mt-3">Embark on a remarkable journey filled with breathtaking destinations, immersive experiences, and cherished memories. Explore the best of what the world has to offer with our expertly crafted day-by-day itinerary.</p> -->
+        </div>
+    </div>
+</div>
+
+
+        <!-- Day 1 -->
+        <div class="accordion-day" onclick="toggleAccordion('day1')">
+            <h2>Day 1 Amsterdam- Ghent - Paris</h2>
+        </div>
+        <div id="day1" class="accordion-content">
+            <div class="row g-4">
+                <!-- Image -->
+                <div class="col-lg-12">
+                    <div class="destination-img">
+                        <img class="img-fluid rounded w-100" src="img/ue.jpg" alt="Day 1">
+                    </div>
+                </div>
+                <!-- Description Below Image -->
+                <div class="col-lg-12">
+                    <p class="itinerary-description">Welcome to the first day of this unforgettable tour of Europe! This morning, meet up with your tour leader and new travel companions at the hotel in Amsterdam. Then, set off towards today's first stop in Ghent, Belgium. Discover the city at leisure and find a lovely lunch spot during your free time this afternoon. Upon arrival in Paris this evening, embark on an enchanting orientation tour of the iconic "City of Lights". Admire the city's top attractions, including the Arc de Triomphe, the River Seine and the Eiffel Tower! Tonight, enjoy a delicious Parisian group dinner.</p>
+                </div>
+                <!-- Activities -->
+                <div class="col-lg-6">
+                    <h4>Experiences</h4>
+                    <div class="activity-item">
+                     
+                        <p>Visit Ghent, one of Belgium's oldest cities</p>
+                    </div>
+                    <div class="activity-item">
+ 
+                        <p>See the sights on a driving tour of Paris</p>
+                    </div>
+                 
+
+                </div>
+                <!-- Accommodation -->
+                <div class="col-lg-6">
+                    <h4>Start point</h4>
+                    <div class="accommodation-item">
+                        <p>Hotel in Amsterdam, Amsterdam, North Holland, Netherlands  </p>
+                    </div>
+                </div>
+                <!-- Included/Excluded -->
+                <div class="col-lg-12">
+                    <div class="included-excluded">
+                        <h3>What's Included</h3>
+                        <ul>
+                            <li><i class="fas fa-check text-success me-2"></i>Airport Transfers</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                            <li><i class="fas fa-check text-success me-2"></i>Welcome Dinner</li>
+                        </ul>
+                        <h3>What's Excluded</h3>
+                        <ul>
+                            <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                            <li><i class="fas fa-times text-danger me-2"></i>Optional Activities</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 2 -->
+        <div class="accordion-day" onclick="toggleAccordion('day2')">
+            <h2>Day 2 Paris: Free Day</h2>
+        </div>
+        <div id="day2" class="accordion-content">
+            <div class="row g-4">
+                <!-- Image -->
+                <div class="col-lg-12">
+                    <div class="destination-img">
+
+                    </div>
+                </div>
+                <!-- Description Below Image -->
+                <div class="col-lg-12">
+                    <p class="itinerary-description">Enjoy a free day to explore more of Paris! Embark on today's optional excursions for the ultimate Parisian experience. Join Paris+ for spectacular sightseeing, a macaron tasting at Ladurée, a guided tour of the renowned Fragonard Musée du Parfum and a cruise along the River Seine. Then, the excursion heads up Montparnasse for the most striking panoramic views of Paris. Conclude the excursion with free time in the Latin Quarter. Tonight, experience an optional cabaret show or, alternatively, join the optional evening in Montmartre to see the famous Moulin Rouge and enjoy a three-course French feast!</p>
+                </div>
+             
+                <!-- Accommodation -->
+                <div class="col-lg-6">
+                    <h4>Meals</h4>
+                    <div class="accommodation-item">
+                    
+                        <p>Breakfast</p>
+                    </div>
+                </div>
+                <!-- Included/Excluded -->
+        
+            </div>
+        </div>
+
+      <!-- Day 3 -->
+      <div class="accordion-day" onclick="toggleAccordion('day3')">
+        <h2>Day 3 Paris - Toulouse</h2>
+    </div>
+    <div id="day3" class="accordion-content">
+        <div class="row g-4">
+            <!-- Image -->
+            <div class="col-lg-12">
+                <div class="destination-img">
+
+                </div>
+            </div>
+            <!-- Description Below Image -->
+            <div class="col-lg-12">
+                <p class="itinerary-description">Journey from Paris to Toulouse today and enjoy a stop in a small medieval town en route for a wine tasting! Marvel at the views of meandering crops, fantastical forests, lush landscapes and picturesque towns along the road. Explore some of the robust red wines from the region at the wine tasting. Next, head to the fourth biggest city in France, Toulouse! Upon arrival, embark on an orientation tour. Marvel at this gem along the Compostela Pilgrimage route known for its stunning Renaissance architecture and home to an incredible 17th-century canal. This evening, enjoy an included local dinner.</p>
+            </div>
+        
+    <!-- Activities -->
+    <div class="col-lg-6">
+        <h4>Experiences</h4>
+        <div class="activity-item">
+        
+            <p>
+                Taste local French wine in Toulouse</p>
+        </div>
+        <div class="activity-item">
+        
+            <p>Explore Toulouse with a local guide</p>
+        </div>             
+    </div>
+   
+
+
+            <!-- Included/Excluded -->
+    
+        </div>
+    </div>
+
+
+
+      <!-- Day 4 -->
+      <div class="accordion-day" onclick="toggleAccordion('day4')">
+        <h2>Day 4 Toulouse - Andorra - Barcelona</h2>
+    </div>
+    <div id="day4" class="accordion-content">
+        <div class="row g-4">
+            <!-- Image -->
+            <div class="col-lg-12">
+                <div class="destination-img">
+
+                </div>
+            </div>
+            <!-- Description Below Image -->
+            <div class="col-lg-12">
+                <p class="itinerary-description">Today, bid Toulouseadieuas the tour continues south and crosses the northern border into Andorra. After finding a lunch spot, continue on towards Barcelona. The tour's next stop is the capital of the Catalonia region in Spain. Discover Barcelona's famous art and architecture, including the famous Sagrada Família church and more of Antoni Gaudí's designs. Enjoy a driving tour visiting some of the top attractions in the city!</p>
+            </div>
+        
+
+
+             <!-- Activities -->
+    <div class="col-lg-6">
+        <h4>Experiences</h4>
+        <div class="activity-item">
+        
+            <p>
+                Visit Andorra; one of Europe’s smallest countries</p>
+        </div>
+        <div class="activity-item">
+        
+            <p>Embark on a driving tour of Barcelona city</p>
+        </div>             
+    </div>
+   
+            <!-- Accommodation -->
+            <div class="col-lg-6">
+                <h4>Meals</h4>
+                <div class="accommodation-item">
+                
+                    <p>Breakfast, Dinner </p>
+                </div>
+            </div>
+            <!-- Included/Excluded -->
+    
+        </div>
+    </div>
+
+
+      <!-- Day 5 -->
+      <div class="accordion-day" onclick="toggleAccordion('day5')">
+        <h2>Day 5 Barcelona: Free Day </h2>
+    </div>
+    <div id="day5" class="accordion-content">
+        <div class="row g-4">
+            <!-- Image -->
+            <div class="col-lg-12">
+                <div class="destination-img">
+
+                </div>
+            </div>
+            <!-- Description Below Image -->
+            <div class="col-lg-12">
+                <p class="itinerary-description">Spend today's free time exploring at leisure! For the ultimate Barcelona experience, join the Highlights of Barcelona featuring the Sagrada Família optional excursion. Marvel at the La Sagrada Família masterpiece that is yet to be completed and admire the idyllic Palau Güell. Next, head to La Boqueria, one of the most popular food markets in Barcelona, and embark on a tour through the historic Gothic Quarter of Barrio Gótico. Otherwise, enjoy a relaxing day to explore, shop and soak up the sun on the beach. Tonight, join the Flamenco Show optional excursion for a buffet dinner and unlimited drinks!</p>
+            </div>
+         
+            <!-- Accommodation -->
+            <div class="col-lg-6">
+                <h4>Meals</h4>
+                <div class="accommodation-item">
+                
+                    <p>Breakfast</p>
+                </div>
+            </div>
+            <!-- Included/Excluded -->
+    
+        </div>
+    </div>
+
+ <!-- Day 6 -->
+ <div class="accordion-day" onclick="toggleAccordion('day6')">
+    <h2>Day 6 Barcelona - Sète - Pont du Gard - Avignon</h2>
+</div>
+<div id="day6" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Say goodbye to Barcelona and journey towards Avignon. Enjoy a stop in Sète on the way. Explore this French port town and its popular canals on an orientation walk before picking a place for lunch. Then, head to Pont du Gard, a centuries-old Roman aqueduct bridge used in the first century AD for transporting water to the Nemausus Roman colony. Next, journey to Avignon in the heart of Provence which used to be the epicentre of the Roman Catholic world. Tonight, choose to join the Evening in Avignon, including a three-course meal and drinks. Embark on a tour through town to explore the impressive sights, including Palais des Papes!</p>
+        </div>
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">
+                <p>Visit Sète in the South of France</p>
+            </div>
+            <div class="activity-item">
+                <p>Visit the Pont du Gard; an ancient Roman aqueduct</p>
+            </div>
+            <div class="activity-item">
+                <p>Orientation walking tour of Avignon</p>
+            </div>
+          
+        </div>
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+<!-- Day 7 -->
+<div class="accordion-day" onclick="toggleAccordion('day7')">
+    <h2>Day 7 Avignon - Monaco - Nice</h2>
+</div>
+<div id="day7" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Today, take advantage of the opportunity to experience a highlight of this tour and France trips in general! Leave Avignon behind in exchange for French Riviera views en route to Nice. Then, journey to one of the world's most dazzling destinations. After arriving in Monaco this afternoon, enjoy time to explore with your tour leader. Admire must-see attractions like the Prince's Palace, Oceanography Museum, Cathedral of Monaco and the Casino de Monte-Carlo. Later, visit the French village of Eze and enjoy a workshop at the Fragonard perfume factory! Arrive in Nice and embark on an orientation tour of this stunning city’s top attractions, including the Promenade des Anglais.</p>
+        </div>
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">     
+                <p>Scenic French Riviera drive</p>
+            </div>
+            <div class="activity-item">     
+                <p>Visit Nice; a gorgeous French coastal city</p>
+            </div>
+         
+            <div class="activity-item">     
+                <p>Enjoy a perfume workshop in Eze</p>
+            </div>
+         
+            <div class="activity-item">     
+                <p>Experience the glitz and glamour of Monaco</p>
+            </div>
+         
+        </div>
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+
+<!-- Day 8 -->
+<div class="accordion-day" onclick="toggleAccordion('day8')">
+    <h2>Day 8 Pisa - Florence - Southern Tuscany</h2>
+</div>
+<div id="day8" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Today, travel inland towards Italy. Be sure your cameras are charged and ready to capture the iconic Leaning Tower of Pisa on a visit! Then, head to Florence. Embark on a walking city tour and learn more about the history of the city. Behold the landmarks that date back to the Renaissance and even as far as Roman times. Visit the Ponte Vecchio, Palazzo Vecchio, the Basilica of Santa Croce, the Florence Baptistry and Michelangelo’s David replica in the Palazzo della Signoria. After, why not enjoy an optional family-style meal of delicious Tuscan dishes? Thereafter, journey to the southern Tuscan hills where the tour touches down for the evening.</p>
+        </div>
+    
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">     
+                <p>See the iconic Leaning Tower of Pisa</p>
+            </div>
+            <div class="activity-item">     
+                <p>Discover Florence, birthplace of the Renaissance</p>
+            </div>
+       
+        </div>
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+<!-- Day 9 -->
+<div class="accordion-day" onclick="toggleAccordion('day9')">
+    <h2>Day 9 Rome - Venice</h2>
+</div>
+<div id="day9" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Head to the country's capital today. Upon arrival in Rome, enjoy a guided walking tour of the city and its incredible history, including its time as the focal point of the Roman Empire. Marvel at the must-see attractions, including the Spanish Steps, the Pantheon, Piazza Navona, the Roman Forum and the Colosseum. This evening, settle in for an included group dinner.</p>
+        </div>
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">  
+                <p>Explore Rome with a local guide</p>
+            </div>
+        </div>
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast, Dinner</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+<!-- Day 10 -->
+<div class="accordion-day" onclick="toggleAccordion('day10')">
+    <h2>Day 10 Rome: Free Day</h2>
+</div>
+<div id="day10" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Spend today's free time exploring everything you wish! Rome has a lot to discover, including ancient ruins, historical landmarks, religious buildings and a vibrant atmosphere! Be sure to visit the iconic Colosseum to marvel at its stunning city views and be transported back to a time of gladiators, chariots and lions filling the arena. Also, pay a visit to the Vatican City, the world's smallest country and seat of the Pope. Once inside, marvel at the museums, see the Sistine Chapel and take in the splendour of the ornate buildings. The choice is yours!</p>
+        </div>
+        <!-- Activities -->
+     
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+<!-- Day 11 -->
+<div class="accordion-day" onclick="toggleAccordion('day11')">
+    <h2>Day 11 Siena - Venice</h2>
+</div>
+<div id="day11" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">The Tuscan town of Siena is today's first stop. Known for its delectable cuisine, fine wine, impressive art and medieval cityscape, Siena is also where the bi-annual Palio horse race is held. Next, travel through Italy towards Venice. This city is an icon of literature, film and art and is sure to captivate any visitor! From the age-old waterways and the masterful artworks to the fantastic food and rich culture, the "Floating City" of Venice is a masterpiece to explore. This evening, enjoy free time to unwind at the hotel or choose to join the optional water taxi cruise along the Venetian canals.</p>
+        </div>
+     
+             <!-- Activities -->
+             <div class="col-lg-6">
+                <h4>Experiences</h4>
+                <div class="activity-item">  
+                    <p>Visit Siena in the Tuscan countryside</p>
+                </div>
+                
+            </div>
+
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+<!-- Day 12 -->
+<div class="accordion-day" onclick="toggleAccordion('day12')">
+    <h2>Day 12 Venice: Free Day</h2>
+</div>
+<div id="day12" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Enjoy a full free day to discover this memorable city at leisure. For the ultimate Venice experience, join the optional gondola ride! Then, experience more of the city's top attractions on the optional lagoon trip to the colourful islands of Murano and Burano. Here, enjoy glass-blowing and lace-making demonstrations as well as views of the vibrant houses! To experience an unforgettable day in Venice, join both of today's excursions!</p>
+        </div>
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">  
+                <p>Experience the magic of Venice</p>
+            </div>     
+        </div>
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+
+<!-- Day 13 -->
+<div class="accordion-day" onclick="toggleAccordion('day13')">
+    <h2>Day 13 Venice - Lucerne - Swiss Alps</h2>
+</div>
+<div id="day13" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Next up on this unforgettable trip is the Swiss Alps after crossing into Switzerland. En route to the evening's hotel, stop in the stunning Swiss city of Lucerne. Upon arrival, head out for an orientation tour before exploring with some free time. As the coach continues the climb to this evening's accommodation in the classic Swiss mountain region of Jungfrau, take in the breathtaking alpine views! This renowned destination serves as the perfect introduction to the magical Swiss mountains. This evening, enjoy an included dinner with the tour group and rest up for another exciting day of alpine exploration!</p>
+        </div>
+       
+
+          <!-- Activities -->
+          <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">  
+                <p>Visit Lucerne, a picturesque Swiss city</p>
+            </div> 
+            <div class="activity-item">  
+                <p>Admire the views on a scenic Swiss mountain drive</p>
+            </div>       
+        </div>
+
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast, Dinner</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+<!-- Day 14 -->
+<div class="accordion-day" onclick="toggleAccordion('day14')">
+    <h2>Day 14 Swiss Alps: Free Day</h2>
+</div>
+<div id="day14" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">
+                The Swiss Alps and all its splendour awaits today! The options are endless. Embark on the journey to the top of Europe by joining the Jungfraujoch optional excursion, heading all the way up to Europe's highest train station for a host of unmissable experiences! Marvel at the year-round views of impressive glaciers and snowy mountaintops, and visit the Ice Palace for plenty of photo opportunities. Back at lower altitudes, choose to join this evening's optional Swiss Fondue Dinner.</p>
+        </div>
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="activity-item">  
+                <p>Breakfast </p>
+            </div>     
+        </div>
+      
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+
+<!-- Day 15 -->
+<div class="accordion-day" onclick="toggleAccordion('day15')">
+    <h2>Day 15 Swiss Alps - Black Forest</h2>
+</div>
+<div id="day15" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Leave the magical alpine views behind today as the journey continues to Germany. Marvel at the magnificent views as the coach departs Interlaken and heads towards the enchanting German Black Forest. The picturesque towns and impressive landscapes are truly something to behold! Stop at Lake Titisee for pictures and visit Triberg to pick a lunch spot. Behold the biggest cuckoo clock in the world before enjoying free time to explore Freudenstadt and its stunning market square upon arrival. This evening, rest up at the hotel in the Black Forest region and enjoy an included group dinner.</p>
+        </div>
+     
+             <!-- Activities -->
+             <div class="col-lg-6">
+                <h4>Experiences</h4>
+                <div class="activity-item">  
+                    <p>Enjoy a picturesque drive through the Black Forest region</p>
+                </div>
+                <div class="activity-item">  
+                    <p>Enjoy a photo stop at Lake Titisee</p>
+                </div>
+                <div class="activity-item">  
+                    <p>Visit Triberg, a pretty Black Forest town</p>
+                </div>
+                <div class="activity-item">  
+                    <p>See the world’s largest cuckoo clock</p>
+                </div>
+                
+                
+            </div>
+
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast, Dinner</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+<!-- Day 16 -->
+<div class="accordion-day" onclick="toggleAccordion('day16')">
+    <h2>Day 16 Black Forest - Rhine Valley - Amsterdam</h2>
+</div>
+<div id="day16" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Journey towards the heart of Germany's Rhine Valley today. Enjoy a stop in Saint Goar and embark on a cruise vessel ride to Boppard with incredible scenery along the river. Marvel at the vibrant vineyards, captivating castles, impressive towers and lush forest along the riverbanks. Then, get a true taste of the Rhine Valley with a wine-tasting experience, including famous varietals like Riesling and Gewürztraminer. Finally, journey to the lively city of Amsterdam for an included group dinner. Enjoy the rest of the evening exploring Amsterdam at leisure.</p>
+        </div>
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">  
+                <p>Sail along the Rhine River</p>
+            </div>
+            <div class="activity-item">  
+                <p>Enjoy a Rhine Valley wine tasting</p>
+            </div>          
+        </div>
+        <!-- Accommodation -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast, Dinner</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+
+<!-- Day 17 -->
+<div class="accordion-day" onclick="toggleAccordion('day17')">
+    <h2>Day 17 Amsterdam: Free Day</h2>
+</div>
+<div id="day17" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">Begin the day with an Amsterdam canal cruise! Enjoy this unique and memorable way to discover the city. For the rest of the day, explore Amsterdam as you wish! There are a variety of iconic experiences, such as visiting famous museums, going on a bike ride, relaxing at local cafes and strolling down the charming canals. Or, join the optional Dutch countryside tour and visit a nearby fishing village, Volendam, see the historic windmills of Zaanse Schans and enjoy demonstrations at a local cheese farm and clog factory. This evening, choose to join the Dutch Pancake Soiree for a memorable farewell.</p>
+        </div>
+       
+
+          <!-- Activities -->
+          <div class="col-lg-6">
+            <h4>Experiences</h4>
+            <div class="activity-item">  
+                <p>Cruise the canals of Amsterdam</p>
+            </div>       
+        </div>
+
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="accommodation-item">
+            
+                <p>Breakfast</p>
+            </div>
+        </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+<!-- Day 18 -->
+<div class="accordion-day" onclick="toggleAccordion('day18')">
+    <h2>Day 18 End of tour in Amsterdam</h2>
+</div>
+<div id="day18" class="accordion-content">
+    <div class="row g-4">
+        <!-- Image -->
+        <div class="col-lg-12">
+            <div class="destination-img">
+
+            </div>
+        </div>
+        <!-- Description Below Image -->
+        <div class="col-lg-12">
+            <p class="itinerary-description">
+                This morning, the tour comes to a conclusion after 18 memorable days of exploring Europe. Have one last breakfast with your Europe Explorer family in Amsterdam. Before parting ways, remember to exchange contact details if you'd like to keep in touch or share travel memories and photos. Until we meet you on the European roads again!</p>
+        </div>
+        <!-- Activities -->
+        <div class="col-lg-6">
+            <h4>Meals</h4>
+            <div class="activity-item">  
+                <p>Breakfast </p>
+            </div>     
+        </div>
+
+             <!-- Accommodation -->
+             <div class="col-lg-6">
+                <h4>End point</h4>
+                <div class="accommodation-item">
+                
+                    <p>Hotel in Amsterdam, Amsterdam, North Holland, Netherlands</p>
+                </div>
+            </div>
+        <!-- Included/Excluded -->
+
+    </div>
+</div>
+
+
+        <!-- Repeat for Days 3-10 -->
+
+    </div>
+</div>
+<!-- Itinerary Details End -->
+
+<style>
+    .destination-img img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    max-height: 400px; /* Adjust height as needed */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+.itinerary-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.activity-item, .accommodation-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.activity-item img, .accommodation-item img {
+    width: 120px; /* Increased size */
+    height: 120px; /* Increased size */
+    border-radius: 10px;
+    margin-right: 15px;
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+.activity-item p, .accommodation-item p {
+    margin: 0;
+    color: #555;
+    flex: 1;
+}
+
+.included-excluded {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+.included-excluded h3 {
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.included-excluded ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.included-excluded ul li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.included-excluded ul li i {
+    color: #007bff;
+    margin-right: 10px;
+}
+
+</style>
+
+
+            <!-- Call to Action -->
+            <div class="text-center mt-5">
+                <h2 class="mb-4">Ready to Explore?</h2>
+                <p class="mb-4">Book your 10-day adventure now and create unforgettable memories with BestExplorerTours.</p>
+                <a href="booking.html" class="btn btn-primary rounded-pill py-3 px-5">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Itinerary Details End -->
+
+    <!-- JavaScript for Accordion -->
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                // Close all other accordions
+                document.querySelectorAll('.accordion-content').forEach((item) => {
+                    item.style.display = "none";
+                });
+                content.style.display = "block";
+            }
+        }
+
+        function toggleAccordion(id) {
+    const content = document.getElementById(id);
+    if (content.style.display === "block") {
+        content.style.display = "none";
+    } else {
+        // Close all other accordions
+        document.querySelectorAll('.accordion-content').forEach((item) => {
+            item.style.display = "none";
+        });
+        content.style.display = "block";
+    }
+}
+
+
+    </script>
+
+     <!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Contact Information -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Get In Touch</h4>
+                    <a href=""><i class="fas fa-home me-2"></i> 123 Explorer Lane, New York, USA</a>
+                    <a href="mailto:info@bestexplorertours.com"><i class="fas fa-envelope me-2"></i> info@bestexplorertours.com</a>
+                    <a href="tel:+01234567890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                    <a href="tel:+01234567891" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67891</a>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-share fa-2x text-white me-2"></i>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://facebook.com/bestexplorertours"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://twitter.com/bestexplorertours"><i class="fab fa-twitter"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://instagram.com/bestexplorertours"><i class="fab fa-instagram"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://linkedin.com/company/bestexplorertours"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Quick Links</h4>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <a href="tours.html"><i class="fas fa-angle-right me-2"></i> Tours</a>
+                    <a href="destinations.html"><i class="fas fa-angle-right me-2"></i> Destinations</a>
+                    <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Travel Blog</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    <a href="faq.html"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Support</h4>
+                    <a href="privacy-policy.html"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                    <a href="terms.html"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    <a href="cancellation-policy.html"><i class="fas fa-angle-right me-2"></i> Cancellation Policy</a>
+                    <a href="refund-policy.html"><i class="fas fa-angle-right me-2"></i> Refund Policy</a>
+                    <a href="sitemap.html"><i class="fas fa-angle-right me-2"></i> Sitemap</a>
+                    <a href="cookie-policy.html"><i class="fas fa-angle-right me-2"></i> Cookie Policy</a>
+                </div>
+            </div>
+
+            <!-- Language, Currency, and Payments -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <div class="row gy-3 gx-2 mb-4">
+                        <!-- Language Selector -->
+                        <div class="col-xl-6">
+                            <form>
+                                <div class="form-floating">
+                                    <select class="form-select bg-dark border" id="language-select">
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                    </select>
+                                    <label for="language-select">Language</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Currency Selector -->
+                        <div class="col-xl-6">
+                            <form>
+                                <div class="form-floating">
+                                    <select class="form-select bg-dark border" id="currency-select">
+                                        <option value="usd">USD ($)</option>
+                                        <option value="eur">EUR (€)</option>
+                                        <option value="gbp">GBP (£)</option>
+                                        <option value="inr">INR (₹)</option>
+                                    </select>
+                                    <label for="currency-select">Currency</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Payment Methods -->
+                    <h4 class="text-white mb-3">We Accept</h4>
+                    <div class="footer-bank-card">
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright text-body py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center text-md-end mb-md-0">
+                <i class="fas fa-copyright me-2"></i>
+                <a class="text-white" href="#">BestExplorerTours</a>, All rights reserved.
+            </div>
+            <!-- <div class="col-md-6 text-center text-md-start">
+                Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<!-- Custom JavaScript for Image Navigation -->
+<script>
+    // Initialize the current image index
+    let currentImageIndex = 0;
+
+    // Get all small images
+    const smallImages = document.querySelectorAll('.small-images img');
+
+    // Function to show the current image
+    function showCurrentImage() {
+        smallImages.forEach((img, index) => {
+            if (index === currentImageIndex) {
+                img.classList.add('active');
+            } else {
+                img.classList.remove('active');
+            }
+        });
+    }
+
+    // Next button functionality
+    document.getElementById('nextButton').addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % smallImages.length;
+        showCurrentImage();
+    });
+
+    // Previous button functionality
+    document.getElementById('prevButton').addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + smallImages.length) % smallImages.length;
+        showCurrentImage();
+    });
+
+    // Show the first image initially
+    showCurrentImage();
+</script>
+
+
+</body>
+
+</html>

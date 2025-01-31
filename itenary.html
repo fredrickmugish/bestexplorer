@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>10-Day Itinerary - BestExplorerTours</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600&family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+  
+        </head>
+    
+        <body>
+    
+            <!-- Spinner Start -->
+            <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+            <!-- Spinner End -->
+    
+            <!-- Topbar Start -->
+            <div class="container-fluid bg-primary px-5 d-none d-lg-block">
+                <div class="row gx-0">
+                    <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                        <div class="d-inline-flex align-items-center" style="height: 45px;">
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                            <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- Topbar End -->
+    
+           <!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+        <!-- Brand Logo -->
+        <a href="index.html" class="navbar-brand p-0">
+            <h1 class="m-0"><i class="fa fa-map-marker-alt me-3"></i>bestexplorertours</h1>
+            <!-- <img src="img/logo.png" alt="Logo"> -->
+        </a>
+
+        <!-- Toggle Button for Mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <!-- Home Link -->
+                <a href="index.html" class="nav-item nav-link">Home</a>
+
+                <!-- About Link -->
+                <a href="about.html" class="nav-item nav-link">About</a>
+
+                <!-- Destinations Dropdown -->
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Destinations
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="itenary.html">USA</a></li>
+                        <li><a class="dropdown-item" href="itenary.html">Canada</a></li>
+                        <li><a class="dropdown-item" href="#europe">Europe</a></li>
+                        <li><a class="dropdown-item" href="#asia">Asia</a></li>
+                        <li><a class="dropdown-item" href="#australia">Australia</a></li>
+                    </ul>
+                </div>
+
+                <!-- Blog Link -->
+                <a href="blog.html" class="nav-item nav-link">Blog</a>
+
+                <!-- Pages Dropdown -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="destination.html" class="dropdown-item">Destination</a>
+                        <a href="tour.html" class="dropdown-item">Explore Tour</a>
+                        <a href="booking.html" class="dropdown-item">Travel Booking</a>
+                        <a href="gallery.html" class="dropdown-item">Our Gallery</a>
+                    </div>
+                </div>
+
+                <!-- Contact Link -->
+                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+            </div>
+
+            <!-- Book Now Button -->
+            <a href="booking.html" class="btn btn-primary rounded-pill py-2 px-4 ms-lg-4">Book Now</a>
+        </div>
+    </nav>
+</div>
+<!-- Navbar & Hero End -->
+
+    <!-- Custom CSS for Accordion -->
+    <style>
+        .accordion-day {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-day:hover {
+            background-color: #f1f1f1;
+        }
+        .accordion-day h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .accordion-content img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .accordion-content p {
+            color: #555;
+        }
+        .accordion-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .accordion-content ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .accordion-content ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .included-excluded {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .included-excluded h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .included-excluded ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .included-excluded ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .included-excluded ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .activity-item, .accommodation-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .activity-item img, .accommodation-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .activity-item p, .accommodation-item p {
+            margin: 0;
+            color: #555;
+        }
+        .overview-section {
+            background-color: #f8f9fa;
+            padding: 40px 20px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+        .overview-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .overview-section p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .overview-section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .overview-section ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .overview-section ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+        .main-image-section {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        .main-image {
+            flex: 2;
+        }
+        .main-image img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .small-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .small-images img {
+            width: 100%;
+            border-radius: 10px;
+            display: none; /* Hide all small images by default */
+        }
+        .small-images img.active {
+            display: block; /* Show only the active small image */
+        }
+        .navigation-buttons {
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .navigation-buttons button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .navigation-buttons button:hover {
+            background-color: #0056b3;
+        }
+        .tour-name {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .tour-name h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+        }
+        .accordion-day {
+            cursor: pointer;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #f9f9f9;
+            transition: background-color 0.3s ease;
+        }
+        .accordion-day:hover {
+            background-color: #f1f1f1;
+        }
+        .accordion-day h2 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: #2c3e50;
+        }
+        .accordion-content {
+            display: none;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+        }
+        .accordion-content img {
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .accordion-content p {
+            color: #555;
+        }
+        .included-excluded {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        .included-excluded h3 {
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        .included-excluded ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .included-excluded ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .included-excluded ul li i {
+            color: #007bff;
+            margin-right: 10px;
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- Topbar and Navbar (Keep the same as your original code) -->
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-breadcrumb">
+        <div class="container text-center py-5" style="max-width: 900px;">
+            <h3 class="text-white display-3 mb-4">10-Day Itinerary</h3>
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item active text-white">Itinerary Details</li>
+            </ol>    
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Itinerary Details Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+                <h5 class="section-title px-3">Explore the Journey</h5>
+                <h1 class="mb-0">10-Day Travel Itinerary</h1>
+                <p class="mt-3">Discover the best destinations, activities, and experiences with BestExplorerTours. Here’s a detailed day-by-day plan for your adventure.</p>
+            </div>
+
+             <!-- Main Image Section -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="main-image-section">
+                <!-- Main Image -->
+                <div class="main-image">
+                    <img src="img/destination-1.jpg" alt="Main Tour Image" id="mainImage">
+                </div>
+                <!-- Small Images -->
+                <div class="small-images">
+                    <img src="img/destination-2.jpg" alt="Small Image 1" class="active">
+                    <img src="img/destination-3.jpg" alt="Small Image 2">
+                    <img src="img/destination-4.jpg" alt="Small Image 3">
+                    <img src="img/destination-5.jpg" alt="Small Image 4" class="active">
+                    <img src="img/destination-6.jpg" alt="Small Image 5">
+                    <img src="img/destination-7.jpg" alt="Small Image 6">
+                    <!-- View All Pictures Link -->
+                    <div class="view-all-pictures">
+                        View All Pictures
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <div class="navigation-buttons">
+                        <button id="prevButton">Previous</button>
+                        <button id="nextButton">Next</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Tour Name -->
+            <div class="tour-name">
+                <h1>10-Day USA Adventure Tour</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+          <!-- Overview Section -->
+          <div class="overview-section">
+            <h2>Overview</h2>
+            <p>Embark on a 10-day journey across the United States, exploring iconic cities, natural wonders, and cultural landmarks. This itinerary is designed to provide you with unforgettable experiences, luxurious accommodations, and seamless travel arrangements.</p>
+            <ul>
+                <li><i class="fas fa-check text-primary me-2"></i><strong>Duration:</strong> 10 Days</li>
+                <li><i class="fas fa-check text-primary me-2"></i><strong>Destinations:</strong> New York City, Washington D.C., Philadelphia, Niagara Falls, Chicago, Grand Canyon, Las Vegas, San Francisco, Los Angeles</li>
+                <li><i class="fas fa-check text-primary me-2"></i><strong>Highlights:</strong> Statue of Liberty, Broadway Shows, White House, Niagara Falls, Grand Canyon, Las Vegas Strip, Golden Gate Bridge, Hollywood</li>
+                <li><i class="fas fa-check text-primary me-2"></i><strong>Accommodation:</strong> 5-star hotels and boutique lodges</li>
+                <li><i class="fas fa-check text-primary me-2"></i><strong>Transportation:</strong> Private transfers and domestic flights</li>
+            </ul>
+        </div>
+
+
+    <!-- Itinerary Details Start -->
+<div class="container-fluid py-5">
+    <div class="container">
+        <div class="mx-auto text-center mb-5" style="max-width: 900px;">
+            <!-- <h5 class="section-title px-3">Your Adventure Awaits</h5> -->
+            <h1 class="mb-0"> See Detailed Itinerary </h1>
+            <!-- <p class="mt-3">Embark on a remarkable journey filled with breathtaking destinations, immersive experiences, and cherished memories. Explore the best of what the world has to offer with our expertly crafted day-by-day itinerary.</p> -->
+        </div>
+    </div>
+</div>
+
+
+            <!-- Day 1 -->
+            <div class="accordion-day" onclick="toggleAccordion('day1')">
+                <h2>Day 1: Arrival in New York City</h2>
+            </div>
+            <div id="day1" class="accordion-content">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="destination-img">
+                            <img class="img-fluid rounded w-100" src="img/destination-9.jpg" alt="Day 1">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="mb-4">Welcome to the Big Apple! Start your journey with a visit to iconic landmarks like Times Square, Central Park, and the Statue of Liberty. Enjoy a delicious dinner at a rooftop restaurant with stunning city views.</p>
+                        <h4>Activities</h4>
+                        <div class="activity-item">
+                            <img src="img/destination-2.jpg" alt="Times Square">
+                            <p>Visit Times Square and experience the vibrant heart of NYC.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-2.jpg" alt="Central Park">
+                            <p>Explore Central Park and enjoy a peaceful stroll.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-3.jpg" alt="Statue of Liberty">
+                            <p>Take a ferry to the Statue of Liberty and Ellis Island.</p>
+                        </div>
+                        <h4>Accommodation</h4>
+                        <div class="accommodation-item">
+                            <img src="img/destination-4.jpg" alt="Hotel NYC">
+                            <p>Stay at The Ritz-Carlton New York, Central Park – a luxurious 5-star hotel.</p>
+                        </div>
+                        <div class="included-excluded">
+                            <h3>What's Included</h3>
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i>Airport Transfers</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Welcome Dinner</li>
+                            </ul>
+                            <h3>What's Excluded</h3>
+                            <ul>
+                                <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                                <li><i class="fas fa-times text-danger me-2"></i>Optional Activities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 2 -->
+            <div class="accordion-day" onclick="toggleAccordion('day2')">
+                <h2>Day 2: Broadway and Museums</h2>
+            </div>
+            <div id="day2" class="accordion-content">
+                <div class="row g-4">
+                    <div class="col-lg-6 order-lg-2">
+                        <div class="destination-img">
+                            <img class="img-fluid rounded w-100" src="img/destination-1.jpg" alt="Day 2">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-lg-1">
+                        <p class="mb-4">Immerse yourself in culture with a visit to the Metropolitan Museum of Art. In the evening, enjoy a world-class Broadway show. End the day with a stroll through the vibrant streets of Manhattan.</p>
+                        <h4>Activities</h4>
+                        <div class="activity-item">
+                            <img src="img/destination-8.jpg" alt="Metropolitan Museum">
+                            <p>Explore the Metropolitan Museum of Art and its vast collections.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-1.jpg" alt="Broadway Show">
+                            <p>Watch a Broadway show like "The Lion King" or "Hamilton".</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-7.jpg" alt="Manhattan Night Walk">
+                            <p>Take a night walk through Manhattan and enjoy the city lights.</p>
+                        </div>
+                        <h4>Accommodation</h4>
+                        <div class="accommodation-item">
+                            <img src="img/destination-5.jpg" alt="Hotel NYC">
+                            <p>Stay at The Ritz-Carlton New York, Central Park – a luxurious 5-star hotel.</p>
+                        </div>
+                        <div class="included-excluded">
+                            <h3>What's Included</h3>
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i>Entrance Fees to Museums</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Broadway Show Tickets</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                            </ul>
+                            <h3>What's Excluded</h3>
+                            <ul>
+                                <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                                <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Day 3 -->
+            <div class="accordion-day" onclick="toggleAccordion('day3')">
+                <h2>Day 3: Trip to Washington D.C.</h2>
+            </div>
+            <div id="day3" class="accordion-content">
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="destination-img">
+                            <img class="img-fluid rounded w-100" src="img/destination-3.jpg" alt="Day 3">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="mb-4">Travel to the nation’s capital and explore the White House, Lincoln Memorial, and Smithsonian Museums. Learn about American history and culture in this iconic city.</p>
+                        <h4>Activities</h4>
+                        <div class="activity-item">
+                            <img src="img/destination-5.jpg" alt="White House">
+                            <p>Take a guided tour of the White House.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-4.jpg" alt="Lincoln Memorial">
+                            <p>Visit the Lincoln Memorial and reflect on its historical significance.</p>
+                        </div>
+                        <div class="activity-item">
+                            <img src="img/destination-4.jpg" alt="Smithsonian Museums">
+                            <p>Explore the Smithsonian Museums and their fascinating exhibits.</p>
+                        </div>
+                        <h4>Accommodation</h4>
+                        <div class="accommodation-item">
+                            <img src="img/destination-3.jpg" alt="Hotel DC">
+                            <p>Stay at The Willard InterContinental Washington – a historic 5-star hotel.</p>
+                        </div>
+                        <div class="included-excluded">
+                            <h3>What's Included</h3>
+                            <ul>
+                                <li><i class="fas fa-check text-success me-2"></i>Transportation to Washington D.C.</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Entrance Fees to Museums</li>
+                                <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                            </ul>
+                            <h3>What's Excluded</h3>
+                            <ul>
+                                <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                                <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add Days 4-10 similarly -->
+
+            <!-- Day 4 -->
+<div class="accordion-day" onclick="toggleAccordion('day4')">
+    <h2>Day 4: Exploring Philadelphia</h2>
+</div>
+<div id="day4" class="accordion-content">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="destination-img">
+                <img class="img-fluid rounded w-100" src="img/destination-4.jpg" alt="Day 4">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <p class="mb-4">Travel to Philadelphia, the birthplace of American democracy. Visit the Liberty Bell, Independence Hall, and the Philadelphia Museum of Art.</p>
+            <h4>Activities</h4>
+            <div class="activity-item">
+                <img src="img/destination-7.jpg" alt="Liberty Bell">
+                <p>See the iconic Liberty Bell and learn about its history.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/about-img.jpg" alt="Independence Hall">
+                <p>Tour Independence Hall, where the Declaration of Independence was signed.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/about-img.jpg" alt="Philadelphia Museum of Art">
+                <p>Explore the Philadelphia Museum of Art and its famous "Rocky Steps."</p>
+            </div>
+            <h4>Accommodation</h4>
+            <div class="accommodation-item">
+                <img src="img/destination-9.jpg" alt="Hotel Philly">
+                <p>Stay at The Ritz-Carlton Philadelphia – a luxurious 5-star hotel.</p>
+            </div>
+            <div class="included-excluded">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><i class="fas fa-check text-success me-2"></i>Transportation to Philadelphia</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Entrance Fees to Museums</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                </ul>
+                <h3>What's Excluded</h3>
+                <ul>
+                    <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                    <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Day 5 -->
+<div class="accordion-day" onclick="toggleAccordion('day5')">
+    <h2>Day 5: Niagara Falls Adventure</h2>
+</div>
+<div id="day5" class="accordion-content">
+    <div class="row g-4">
+        <div class="col-lg-6 order-lg-2">
+            <div class="destination-img">
+                <img class="img-fluid rounded w-100" src="img/destination-5.jpg" alt="Day 5">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <p class="mb-4">Experience the breathtaking beauty of Niagara Falls. Take a boat tour, visit the Cave of the Winds, and enjoy the stunning views.</p>
+            <h4>Activities</h4>
+            <div class="activity-item">
+                <img src="img/about-img-1.png" alt="Niagara Falls">
+                <p>Take a boat tour to get up close to the falls.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/packages-1.jpg" alt="Cave of the Winds">
+                <p>Explore the Cave of the Winds and feel the power of the falls.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/packages-4.jpg" alt="Niagara Falls at Night">
+                <p>Enjoy the illuminated falls at night.</p>
+            </div>
+            <h4>Accommodation</h4>
+            <div class="accommodation-item">
+                <img src="img/packages-3.jpg" alt="Hotel Niagara">
+                <p>Stay at The Red Coach Inn – a charming boutique hotel near the falls.</p>
+            </div>
+            <div class="included-excluded">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><i class="fas fa-check text-success me-2"></i>Transportation to Niagara Falls</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Boat Tour Tickets</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Accommodation at Boutique Hotel</li>
+                </ul>
+                <h3>What's Excluded</h3>
+                <ul>
+                    <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                    <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Day 6 -->
+<div class="accordion-day" onclick="toggleAccordion('day6')">
+    <h2>Day 6: Chicago City Tour</h2>
+</div>
+<div id="day6" class="accordion-content">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="destination-img">
+                <img class="img-fluid rounded w-100" src="img/destination-6.jpg" alt="Day 6">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <p class="mb-4">Explore the Windy City with a visit to Millennium Park, Willis Tower, and the Navy Pier.</p>
+            <h4>Activities</h4>
+            <div class="activity-item">
+                <img src="img/destination-7.jpg" alt="Millennium Park">
+                <p>Visit Millennium Park and see the iconic "Cloud Gate" sculpture.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/destination-4.jpg" alt="Willis Tower">
+                <p>Take in panoramic views from the Willis Tower Skydeck.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/about-img.jpg" alt="Navy Pier">
+                <p>Enjoy rides and attractions at Navy Pier.</p>
+            </div>
+            <h4>Accommodation</h4>
+            <div class="accommodation-item">
+                <img src="img/destination-8.jpg" alt="Hotel Chicago">
+                <p>Stay at The Langham Chicago – a luxurious 5-star hotel.</p>
+            </div>
+            <div class="included-excluded">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><i class="fas fa-check text-success me-2"></i>Transportation to Chicago</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Entrance Fees to Attractions</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                </ul>
+                <h3>What's Excluded</h3>
+                <ul>
+                    <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                    <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Day 7 -->
+<div class="accordion-day" onclick="toggleAccordion('day7')">
+    <h2>Day 7: Grand Canyon Exploration</h2>
+</div>
+<div id="day7" class="accordion-content">
+    <div class="row g-4">
+        <div class="col-lg-6 order-lg-2">
+            <div class="destination-img">
+                <img class="img-fluid rounded w-100" src="img/destination-7.jpg" alt="Day 7">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <p class="mb-4">Visit the Grand Canyon, one of the Seven Natural Wonders of the World. Enjoy hiking, helicopter tours, and breathtaking views.</p>
+            <h4>Activities</h4>
+            <div class="activity-item">
+                <img src="img/destination-5.jpg" alt="Grand Canyon">
+                <p>Hike along the South Rim and enjoy stunning views.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/destination-8.jpg" alt="Helicopter Tour">
+                <p>Take a helicopter tour for a bird's-eye view of the canyon.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/destination-4.jpg" alt="Sunset at Grand Canyon">
+                <p>Watch the sunset over the Grand Canyon.</p>
+            </div>
+            <h4>Accommodation</h4>
+            <div class="accommodation-item">
+                <img src="img/destination-3.jpg" alt="Hotel Grand Canyon">
+                <p>Stay at El Tovar Hotel – a historic lodge on the South Rim.</p>
+            </div>
+            <div class="included-excluded">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><i class="fas fa-check text-success me-2"></i>Transportation to Grand Canyon</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Helicopter Tour Tickets</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Accommodation at Historic Lodge</li>
+                </ul>
+                <h3>What's Excluded</h3>
+                <ul>
+                    <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                    <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Day 8 -->
+<div class="accordion-day" onclick="toggleAccordion('day8')">
+    <h2>Day 8: Las Vegas Extravaganza</h2>
+</div>
+<div id="day8" class="accordion-content">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="destination-img">
+                <img class="img-fluid rounded w-100" src="img/destination-8.jpg" alt="Day 8">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <p class="mb-4">Experience the glitz and glamour of Las Vegas. Explore the Strip, enjoy world-class entertainment, and try your luck at the casinos.</p>
+            <h4>Activities</h4>
+            <div class="activity-item">
+                <img src="img/destination-1.jpg" alt="Las Vegas Strip">
+                <p>Walk along the Las Vegas Strip and see iconic hotels and casinos.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/destination-2.jpg" alt="Bellagio Fountains">
+                <p>Watch the famous Bellagio Fountains show.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/destination-3.jpg" alt="Cirque du Soleil">
+                <p>Enjoy a Cirque du Soleil performance.</p>
+            </div>
+            <h4>Accommodation</h4>
+            <div class="accommodation-item">
+                <img src="img/destination-4.jpg" alt="Hotel Las Vegas">
+                <p>Stay at The Venetian Resort – a luxurious 5-star hotel.</p>
+            </div>
+            <div class="included-excluded">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><i class="fas fa-check text-success me-2"></i>Transportation to Las Vegas</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Show Tickets</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                </ul>
+                <h3>What's Excluded</h3>
+                <ul>
+                    <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                    <li><i class="fas fa-times text-danger me-2"></i>Casino Expenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Day 9 -->
+<div class="accordion-day" onclick="toggleAccordion('day9')">
+    <h2>Day 9: San Francisco Discovery</h2>
+</div>
+<div id="day9" class="accordion-content">
+    <div class="row g-4">
+        <div class="col-lg-6 order-lg-2">
+            <div class="destination-img">
+                <img class="img-fluid rounded w-100" src="img/destination-9.jpg" alt="Day 9">
+            </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+            <p class="mb-4">Explore the vibrant city of San Francisco. Visit the Golden Gate Bridge, Alcatraz Island, and Fisherman’s Wharf.</p>
+            <h4>Activities</h4>
+            <div class="activity-item">
+                <img src="img/destination-9.jpg" alt="Golden Gate Bridge">
+                <p>Walk or bike across the iconic Golden Gate Bridge.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/destination-8.jpg" alt="Alcatraz Island">
+                <p>Take a ferry to Alcatraz Island and tour the historic prison.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/destination-7.jpg" alt="Fisherman’s Wharf">
+                <p>Explore Fisherman’s Wharf and enjoy fresh seafood.</p>
+            </div>
+            <h4>Accommodation</h4>
+            <div class="accommodation-item">
+                <img src="img/destination-5.jpg" alt="Hotel San Francisco">
+                <p>Stay at Fairmont San Francisco – a luxurious 5-star hotel.</p>
+            </div>
+            <div class="included-excluded">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><i class="fas fa-check text-success me-2"></i>Transportation to San Francisco</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Ferry Tickets to Alcatraz</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                </ul>
+                <h3>What's Excluded</h3>
+                <ul>
+                    <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                    <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Day 10 -->
+<div class="accordion-day" onclick="toggleAccordion('day10')">
+    <h2>Day 10: Los Angeles Highlights</h2>
+</div>
+<div id="day10" class="accordion-content">
+    <div class="row g-4">
+        <div class="col-lg-6">
+            <div class="destination-img">
+                <img class="img-fluid rounded w-100" src="img/destination-2.jpg" alt="Day 10">
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <p class="mb-4">End your journey in Los Angeles. Visit Hollywood, Santa Monica Pier, and Griffith Observatory.</p>
+            <h4>Activities</h4>
+            <div class="activity-item">
+                <img src="img/about-img-1.png" alt="Hollywood">
+                <p>Walk along the Hollywood Walk of Fame and see the TCL Chinese Theatre.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/about-img.jpg" alt="Santa Monica Pier">
+                <p>Enjoy rides and attractions at Santa Monica Pier.</p>
+            </div>
+            <div class="activity-item">
+                <img src="img/subscribe-img.jpg" alt="Griffith Observatory">
+                <p>Visit Griffith Observatory for stunning views of LA and the Hollywood Sign.</p>
+            </div>
+            <h4>Accommodation</h4>
+            <div class="accommodation-item">
+                <img src="img/destination-5.jpg" alt="Hotel Los Angeles">
+                <p>Stay at The Beverly Hills Hotel – a luxurious 5-star hotel.</p>
+            </div>
+            <div class="included-excluded">
+                <h3>What's Included</h3>
+                <ul>
+                    <li><i class="fas fa-check text-success me-2"></i>Transportation to Los Angeles</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Entrance Fees to Attractions</li>
+                    <li><i class="fas fa-check text-success me-2"></i>Accommodation at 5-star Hotel</li>
+                </ul>
+                <h3>What's Excluded</h3>
+                <ul>
+                    <li><i class="fas fa-times text-danger me-2"></i>Meals (Except Breakfast)</li>
+                    <li><i class="fas fa-times text-danger me-2"></i>Personal Expenses</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+            <!-- Call to Action -->
+            <div class="text-center mt-5">
+                <h2 class="mb-4">Ready to Explore?</h2>
+                <p class="mb-4">Book your 10-day adventure now and create unforgettable memories with BestExplorerTours.</p>
+                <a href="booking.html" class="btn btn-primary rounded-pill py-3 px-5">Book Now</a>
+            </div>
+        </div>
+    </div>
+    <!-- Itinerary Details End -->
+
+    <!-- JavaScript for Accordion -->
+    <script>
+        function toggleAccordion(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                // Close all other accordions
+                document.querySelectorAll('.accordion-content').forEach((item) => {
+                    item.style.display = "none";
+                });
+                content.style.display = "block";
+            }
+        }
+    </script>
+
+     <!-- Footer Start -->
+<div class="container-fluid footer py-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <!-- Contact Information -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Get In Touch</h4>
+                    <a href=""><i class="fas fa-home me-2"></i> 123 Explorer Lane, New York, USA</a>
+                    <a href="mailto:info@bestexplorertours.com"><i class="fas fa-envelope me-2"></i> info@bestexplorertours.com</a>
+                    <a href="tel:+01234567890"><i class="fas fa-phone me-2"></i> +012 345 67890</a>
+                    <a href="tel:+01234567891" class="mb-3"><i class="fas fa-print me-2"></i> +012 345 67891</a>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-share fa-2x text-white me-2"></i>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://facebook.com/bestexplorertours"><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://twitter.com/bestexplorertours"><i class="fab fa-twitter"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://instagram.com/bestexplorertours"><i class="fab fa-instagram"></i></a>
+                        <a class="btn-square btn btn-primary rounded-circle mx-1" href="https://linkedin.com/company/bestexplorertours"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Quick Links</h4>
+                    <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                    <a href="tours.html"><i class="fas fa-angle-right me-2"></i> Tours</a>
+                    <a href="destinations.html"><i class="fas fa-angle-right me-2"></i> Destinations</a>
+                    <a href="blog.html"><i class="fas fa-angle-right me-2"></i> Travel Blog</a>
+                    <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    <a href="faq.html"><i class="fas fa-angle-right me-2"></i> FAQ</a>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item d-flex flex-column">
+                    <h4 class="mb-4 text-white">Support</h4>
+                    <a href="privacy-policy.html"><i class="fas fa-angle-right me-2"></i> Privacy Policy</a>
+                    <a href="terms.html"><i class="fas fa-angle-right me-2"></i> Terms & Conditions</a>
+                    <a href="cancellation-policy.html"><i class="fas fa-angle-right me-2"></i> Cancellation Policy</a>
+                    <a href="refund-policy.html"><i class="fas fa-angle-right me-2"></i> Refund Policy</a>
+                    <a href="sitemap.html"><i class="fas fa-angle-right me-2"></i> Sitemap</a>
+                    <a href="cookie-policy.html"><i class="fas fa-angle-right me-2"></i> Cookie Policy</a>
+                </div>
+            </div>
+
+            <!-- Language, Currency, and Payments -->
+            <div class="col-md-6 col-lg-6 col-xl-3">
+                <div class="footer-item">
+                    <div class="row gy-3 gx-2 mb-4">
+                        <!-- Language Selector -->
+                        <div class="col-xl-6">
+                            <form>
+                                <div class="form-floating">
+                                    <select class="form-select bg-dark border" id="language-select">
+                                        <option value="en">English</option>
+                                        <option value="es">Spanish</option>
+                                        <option value="fr">French</option>
+                                        <option value="de">German</option>
+                                    </select>
+                                    <label for="language-select">Language</label>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- Currency Selector -->
+                        <div class="col-xl-6">
+                            <form>
+                                <div class="form-floating">
+                                    <select class="form-select bg-dark border" id="currency-select">
+                                        <option value="usd">USD ($)</option>
+                                        <option value="eur">EUR (€)</option>
+                                        <option value="gbp">GBP (£)</option>
+                                        <option value="inr">INR (₹)</option>
+                                    </select>
+                                    <label for="currency-select">Currency</label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- Payment Methods -->
+                    <h4 class="text-white mb-3">We Accept</h4>
+                    <div class="footer-bank-card">
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-amex fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-visa fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-mastercard fa-2x"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-cc-paypal fa-2x"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-cc-discover fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright text-body py-4">
+    <div class="container">
+        <div class="row g-4 align-items-center">
+            <div class="col-md-6 text-center text-md-end mb-md-0">
+                <i class="fas fa-copyright me-2"></i>
+                <a class="text-white" href="#">BestExplorerTours</a>, All rights reserved.
+            </div>
+            <!-- <div class="col-md-6 text-center text-md-start">
+                Designed By <a class="text-white" href="https://htmlcodex.com">HTML Codex</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- Copyright End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-primary btn-primary-outline-0 btn-md-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<!-- Custom JavaScript for Image Navigation -->
+<script>
+    // Initialize the current image index
+    let currentImageIndex = 0;
+
+    // Get all small images
+    const smallImages = document.querySelectorAll('.small-images img');
+
+    // Function to show the current image
+    function showCurrentImage() {
+        smallImages.forEach((img, index) => {
+            if (index === currentImageIndex) {
+                img.classList.add('active');
+            } else {
+                img.classList.remove('active');
+            }
+        });
+    }
+
+    // Next button functionality
+    document.getElementById('nextButton').addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex + 1) % smallImages.length;
+        showCurrentImage();
+    });
+
+    // Previous button functionality
+    document.getElementById('prevButton').addEventListener('click', () => {
+        currentImageIndex = (currentImageIndex - 1 + smallImages.length) % smallImages.length;
+        showCurrentImage();
+    });
+
+    // Show the first image initially
+    showCurrentImage();
+</script>
+
+
+</body>
+
+</html>
